@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class UserController {
 
-    @GetMapping({"/", "/welcome"})
+    @GetMapping({"/Sihle"})
     public String welcome(@RequestParam(value = "Name",
             defaultValue = "Sihle") String name, Model model) {
         model.addAttribute("Name", name);
-        return "welcome";
+        return "Sihle";
 
     }
 }
